@@ -1,227 +1,120 @@
-/* .mentor-list {
-  padding: 20px;
-  text-align: center;
-}
-
-.mentor-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.mentor-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* src/MentorList.css */
-/* .mentor-card {
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
-
-.mentor-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  text-align: center;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* src/MentorList.css */
-/* .mentor-list {
+.mentor-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px 20px;
-  background-color: #f8fafc;
+  font-family: 'Inter', sans-serif;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.search-icon {
-  margin-right: 10px;
-}
-
-input {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-  width: 100%;
+.mentor-list-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .mentor-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .mentor-card {
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
 }
 
 .mentor-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.mentor-card-header {
+  position: relative;
 }
 
-.modal-content {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  padding: 20px;
-  border-radius: 12px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.close-icon {
-  float: right;
-  cursor: pointer;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mentor-list {
-  text-align: center;
-}
-
-.mentor-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.mentor-card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  text-align: center;
-}
-
-.mentor-card img {
+.mentor-image {
   width: 100%;
-  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.mentor-rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.mentor-rating span {
+  margin-left: 5px;
+}
+
+.mentor-card-body {
+  padding: 20px;
+}
+
+.mentor-name {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.mentor-specialty {
+  font-size: 1rem;
+  color: #666;
   margin-bottom: 15px;
 }
 
-.mentor-card button {
+.mentor-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.mentor-info span {
+  display: flex;
+  align-items: center;
+}
+
+.mentor-info svg {
+  margin-right: 5px;
+}
+
+.schedule-button {
+  width: 100%;
+  padding: 12px;
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 0 0 12px 12px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.mentor-card button:hover {
+.schedule-button:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .mentor-list-title {
+    font-size: 2rem;
+  }
+
+  .mentor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
