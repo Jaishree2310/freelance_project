@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .mentor-list, .meeting-form {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #5A67D8;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #434190;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #5A67D8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.3);
+  }
+  
+  .mentor-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .mentor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mentor-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .mentor-card p {
+    font-size: 16px;
+    color: #4a5568;
+  }
+  
+  .schedule-meeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background-color: #434190;
+  }
+  
+  .testimonial-section {
+    padding: 40px 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .testimonial {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+
+  /* src/App.css */
+.App {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .mentor-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
